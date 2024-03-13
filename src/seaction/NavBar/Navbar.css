@@ -1,0 +1,93 @@
+.navbar {
+  background-color: #ff7722;
+  color: black;
+  z-index: 999;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-links.active {
+  display: flex;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  display: flex;
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #fff;
+}
+.translate-icon {
+  text-decoration: none;
+  display: flex;
+
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    background-color: #d4d2d2;
+    width: 100%;
+    padding: 2rem 0;
+    transition: all 0.5s ease;
+  }
+
+  .navbar-links.active {
+    left: 0;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}
+
+.login {
+  color: rgb(104, 85, 224);
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(104, 85, 224, 1);
+  width: 60px;
+  margin-right: 20px;
+  animation-duration: 3s;
+  border-radius: 10px;
+}
+button:hover {
+  color: white;
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.6);
+  background-color: rgba(104, 85, 224, 1);
+}
